@@ -1,11 +1,31 @@
-*{
-  color:#eee;
+@font-face {
+  font-family: "Brandon_bld";
+  src: url('Brandon_bld.otf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url('Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url('Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url('Roboto-Bold.ttf') format('truetype');
+}
+
+html{
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 body{
-  background: #eee;
   padding: 0;
   margin: 0;
+  background: #eeeeee;
+  min-height: 100vh;
 }
 
 #page header{
@@ -23,7 +43,7 @@ body{
   align-items: center;
 }
 
-#page div p{
+#page header div p{
   color: #fff;
   font-weight: bold;
   font-size: 1em;
@@ -31,4 +51,46 @@ body{
   flex:1;
   position: relative;
   top: 0.4em;
+}
+
+#main{
+}
+
+#myContainer{
+  width: 100vw;
+  overflow: hidden;
+}
+
+#theImg{
+  width: 100%;
+}
+
+.myBtn{
+  width: 100%;
+  border: none;
+  color: #eee;
+  background: #313129;
+  font-family: "Brandon_bld", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.myBtn:hover{
+  cursor: pointer;
+  background: #73736a;
+}
+
+#dialogue{
+  color: #181818;
+}
+
+#speaker{
+  color: #314a52;
+  font-family: "Brandon_bld", Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+
+#Text{
+  font-family: "Roboto-Regular", Arial, Helvetica, sans-serif;
 }
